@@ -1,3 +1,5 @@
+# ----------------------------------------------------------------------------
+# Customize Options:
 title: Duo, A Jekyll Theme for Busy People
 permalink: :title
 baseurl: "/duo"
@@ -10,6 +12,7 @@ url: "https://chibicode.github.io"
 brand_color: "pink-500"
 # "UA-NNNNNNNN-N"
 google_analytics: ""
+# ----------------------------------------------------------------------------
 
 exclude:
   - Gemfile
