@@ -23,6 +23,7 @@ exclude:
   - yarn.lock
   - package.json
   - hot
+  
 plugins:
   - jekyll-feed
   - jekyll-sitemap
