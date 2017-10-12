@@ -127,3 +127,15 @@ figcaption {
   /* Silver */
   color: #999;
 }
+
+.twitter-tweet {
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.fb_iframe_widget.fb-post,
+.fb_iframe_widget.fb-post * {
+  max-width: 100% !important;
+}
