@@ -3,4 +3,4 @@
 # image: ...
 ---
 
-**Hello World**
+Duo is a [Jekyll](http://jekyllrb.com/) blog theme designed for simplicity.

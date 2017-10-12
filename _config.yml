@@ -8,8 +8,8 @@ author: "Shu Uesugi"
 date_format: "%b %-d, %Y"
 url: "https://chibicode.github.io"
 # See: https://material.io/guidelines/style/color.html
-# Use color-name-value, like pink-500 or deep-purple-700
-brand_color: "pink-500"
+# Use color-name-value, like pink-200 or deep-purple-400
+brand_color: "yellow-500"
 # "UA-NNNNNNNN-N"
 google_analytics: ""
 # ----------------------------------------------------------------------------
@@ -23,7 +23,7 @@ exclude:
   - yarn.lock
   - package.json
   - hot
-  
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
