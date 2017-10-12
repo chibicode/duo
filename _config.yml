@@ -1,0 +1,33 @@
+title: Duo, A Jekyll Theme for Busy People
+permalink: :title
+baseurl: "/duo"
+lang: "en"
+# See: https://material.io/guidelines/style/color.html
+# Use color-name-value, like pink-500 or deep-purple-700
+brand_color: "pink-500"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - mix-manifest.json
+  - webpack.mix.js
+  - yarn.lock
+  - package.json
+  - hot
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"

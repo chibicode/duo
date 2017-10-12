@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "dependencies": {
+    "cssnano": "^3.10.0",
+    "laravel-mix": "^1.5.0",
+    "material-colors": "^1.2.5",
+    "postcss-import": "^11.0.0",
+    "sanitize.css": "^5.0.0",
+    "tachyons": "^4.8.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.7.4"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  }
+}

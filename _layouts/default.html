@@ -1,0 +1,67 @@
+{% if page.url == "/" %}
+{% assign is_home = true %}
+{% else %}
+{% assign is_home = false %}
+{% endif %}
+
+<!DOCTYPE html>
+<html
+  lang="{{ page.lang | default: site.lang | default: "en" }}"
+  class="mid-gray">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/static/app.css" | relative_url }}">
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}" />
+
+  </head>
+  <body>
+    <main class="measure center ph3 pt5 pb6">
+      {% if is_home %}
+      <h1 class="mt0 mb4">
+      {% else %}
+      <h3 class="mt0 mb5">
+      {% endif %}
+        <a
+          href="{{ "/" | relative_url }}"
+          class="no-underline color-{{ site.brand_color }} hover-dark-gray">
+          {{site.title}}
+        </a>
+      {% if is_home %}
+      </h1>
+      {% else %}
+      </h3>
+      {% endif %}
+      {% if is_home %}
+        <section class="pv2">
+          {{ content }}
+        </section>
+        <hr />
+        <section class="pv2">
+          <ul class="list pl0 tc">
+          {% for post in site.posts %}
+            <li class="mt0 mb4">
+              <span class="silver db mb1">{{ post.date | date: "%Y/%d/%m" }}</span>
+              <h3 class="ma0">
+                <a class=" no-underline" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              </h3>
+            </li>
+          {% endfor %}
+          </ul>
+        </section>
+      {% else %}
+        <section class="pv2">
+          <h1 class="mt0 mb1">{{page.title}}</h1>
+          <p class="silver mt0 mb3 pb1">{{page.date | date: "%Y/%d/%m" }}</p>
+          {{content}}
+        </section>
+        <hr />
+        <section class="pv2">
+          {{ site.pages[0].content }}
+        </section>
+      {% endif %}
+    </main>
+  </body>
+</html>
