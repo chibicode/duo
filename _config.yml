@@ -2,9 +2,15 @@ title: Duo, A Jekyll Theme for Busy People
 permalink: :title
 baseurl: "/duo"
 lang: "en"
+author: "Shu Uesugi"
+date_format: "%b %-d, %Y"
+url: "https://chibicode.github.io"
 # See: https://material.io/guidelines/style/color.html
 # Use color-name-value, like pink-500 or deep-purple-700
 brand_color: "pink-500"
+# "UA-NNNNNNNN-N"
+google_analytics: ""
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -14,9 +20,10 @@ exclude:
   - yarn.lock
   - package.json
   - hot
-# plugins:
-#   - jekyll-feed
-#   - jekyll-seo
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 defaults:
   -

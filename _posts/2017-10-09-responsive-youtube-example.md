@@ -1,5 +1,8 @@
 ---
 title: "Responsive Youtube Example"
+
+# To set og:image:
+# image: ...
 ---
 
 Use Tachyons [`aspect-ratio`](http://tachyons.io/components/layout/horizontal-aspect-ratios/index.html) helpers:

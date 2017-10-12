@@ -1,6 +1,9 @@
 ---
 title: "HTML Test Case"
 # https://github.com/cbracco/html5-test-page/
+
+# To set og:image:
+# image: ...
 ---
 
 <section id="text">
