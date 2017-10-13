@@ -1,4 +1,4 @@
-{% if page.url == "/" %}
+{% if page.url == "/" or page.url == "/404.html" %}
 {% assign is_home = true %}
 {% else %}
 {% assign is_home = false %}
@@ -50,11 +50,13 @@
       {% else %}
         <section class="pv2">
           <h1 class="mt0 mb1">{{page.title}}</h1>
-          <p class="silver mt0 mb3 pb1">
-            <time datetime="{{ page.date | date_to_xmlschema }}">
-              {{page.date | date: site.date_format }}
-            </time>
-          </p>
+          {% if page.date %}
+            <p class="silver mt0 mb3 pb1">
+              <time datetime="{{ page.date | date_to_xmlschema }}">
+                {{page.date | date: site.date_format }}
+              </time>
+            </p>
+          {% endif %}
           <p>
             <a class="twitter-share-button"
             href="https://twitter.com/intent/tweet"
@@ -63,6 +65,13 @@
             Tweet</a>
           </p>
           {{content}}
+          {% if page.date %}
+            <p class="silver">
+              <time datetime="{{ page.date | date_to_xmlschema }}">
+                {{page.date | date: site.date_format }}
+              </time>
+            </p>
+          {% endif %}
           <p>
             <a class="twitter-share-button"
             href="https://twitter.com/intent/tweet"
