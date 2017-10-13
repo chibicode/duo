@@ -46,8 +46,6 @@ h1, h2, h3, h4, h5, h6, button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  /* dark-gray */
   line-height: 1.3;
   margin-top: 1.5em;
   margin-bottom: 0.5em;

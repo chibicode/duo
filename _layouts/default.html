@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html
   lang="{{ page.lang | default: site.lang | default: "en" }}"
-  class="mid-gray">
+  class="dark-gray">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -88,17 +88,15 @@
               </h3>
             </li>
           {% endfor %}
-          {% if site.posts.size > 3 %}
-            <li class="pt4 mt0 mb4">
-              <h3 class="ma0">
-                <a
-                href="{{ "/" | relative_url }}"
-                class="no-underline bg-{{ site.brand_color }}">
-                  {{site.title}}
-                </a>
-              </h3>
-            </li>
-          {% endif %}
+          <li class="pt4 mt0 mb4">
+            <h3 class="ma0">
+              <a
+              href="{{ "/" | relative_url }}"
+              class="no-underline bg-{{ site.brand_color }}">
+                {{site.title}}
+              </a>
+            </h3>
+          </li>
         {% endif %}
         </ul>
       </section>
