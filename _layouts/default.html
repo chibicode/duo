@@ -80,7 +80,7 @@
             </li>
           {% endfor %}
         {% else %}
-          {% for post in site.posts limit:3 %}
+          {% for post in site.posts limit:10 %}
             <li class="mt0 mb4">
               <span class="silver db mb1">{{ post.date | date: "%Y/%d/%m" }}</span>
               <h3 class="ma0">
