@@ -8,6 +8,16 @@
   lang="{{ page.lang | default: site.lang | default: "en" }}"
   class="dark-gray">
   <head>
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,7 +51,7 @@
         <section class="pv2">
           <h1 class="mt0 mb1">{{page.title}}</h1>
           <p class="silver mt0 mb3 pb1">
-            <time datetime="{{ page.date | date_to_xmlschema}}">
+            <time datetime="{{ page.date | date_to_xmlschema }}">
               {{page.date | date: site.date_format }}
             </time>
           </p>
@@ -73,7 +83,7 @@
         {% if is_home %}
           {% for post in site.posts %}
             <li class="mt0 mb4">
-              <span class="silver db mb1">{{ post.date | date: "%Y/%d/%m" }}</span>
+              <span class="silver db mb1">{{ post.date | date: site.date_format }}</span>
               <h3 class="ma0">
                 <a class=" no-underline" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
               </h3>
@@ -82,7 +92,7 @@
         {% else %}
           {% for post in site.posts limit:10 %}
             <li class="mt0 mb4">
-              <span class="silver db mb1">{{ post.date | date: "%Y/%d/%m" }}</span>
+              <span class="silver db mb1">{{ post.date | date: site.date_format }}</span>
               <h3 class="ma0">
                 <a class=" no-underline" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
               </h3>
@@ -101,16 +111,6 @@
         </ul>
       </section>
     </main>
-    {% if jekyll.environment == 'production' and site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
     <script>window.twttr = (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0],
       t = window.twttr || {};
