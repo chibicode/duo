@@ -4,10 +4,13 @@ title: Duo, A Jekyll Theme for Busy People
 permalink: :title
 baseurl: "/duo"
 lang: "en"
-author: "Shu Uesugi"
 date_format: "%b %-d, %Y"
-twitter_account: "chibicode"
 url: "https://chibicode.github.io"
+# Twitter IDs
+twitter:
+  username: "chibicode"
+author:
+  twitter: "chibicode"
 # See: https://material.io/guidelines/style/color.html
 # Use color-name-value, like pink-200 or deep-purple-400
 brand_color: "yellow-500"
