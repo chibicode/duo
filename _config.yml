@@ -16,6 +16,13 @@ author:
 brand_color: "yellow-500"
 # "UA-NNNNNNNN-N"
 google_analytics: ""
+# Set default og:image
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "/images/og.png"
 # ----------------------------------------------------------------------------
 
 exclude:
@@ -33,17 +40,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "default"
+  - jekyll-readme-index
