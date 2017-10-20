@@ -22,7 +22,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: "/images/og.png"
+      image: "/duo/images/og.png"
 # ----------------------------------------------------------------------------
 
 exclude:
