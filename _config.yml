@@ -1,7 +1,7 @@
 # ----------------------------------------------------------------------------
 # Customize Options:
 title: Duo, A Jekyll Theme for Busy People
-permalink: :title
+permalink: posts/:title/
 baseurl: "/duo"
 lang: "en"
 date_format: "%b %-d, %Y"
