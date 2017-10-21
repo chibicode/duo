@@ -2,7 +2,7 @@
 # Customize Options:
 title: Duo, A Jekyll Theme for Busy People
 permalink: posts/:title/
-baseurl: "/duo"
+baseurl: "/duo/"
 lang: "en"
 date_format: "%b %-d, %Y"
 url: "https://chibicode.github.io"
@@ -22,7 +22,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: "/duo/images/og.png"
+      image: "images/og.png"
 # ----------------------------------------------------------------------------
 
 exclude:
