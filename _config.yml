@@ -2,6 +2,7 @@
 # Customize Options:
 title: Duo, A Jekyll Theme for Busy People
 permalink: posts/:title/
+# If you're not deploying to a subdirectory, set baseurl to nil
 baseurl: "/duo/"
 lang: "en"
 date_format: "%b %-d, %Y"
@@ -34,6 +35,7 @@ exclude:
   - yarn.lock
   - package.json
   - hot
+  - LICENSE.txt
 
 plugins:
   - jekyll-feed
