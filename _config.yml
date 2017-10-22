@@ -5,6 +5,7 @@ permalink: posts/:title/
 # If you're not deploying to a subdirectory, set baseurl to nil
 baseurl: "/duo/"
 lang: "en"
+num_posts_visible_initially: 10
 date_format: "%b %-d, %Y"
 url: "https://chibicode.github.io"
 # Twitter IDs
