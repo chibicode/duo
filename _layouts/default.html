@@ -125,14 +125,17 @@
       {% endif %}
     </main>
     <script>
-      document.querySelector('.js-more').addEventListener('click', function (e) {
-        e.preventDefault()
-        e.target.classList.add('dn')
-        e.target.classList.remove('dib')
-        document.querySelectorAll('.js-hidden').forEach(function (elt) {
-          elt.classList.remove('dn')
+      var moreLink = document.querySelector('.js-more')
+      if (moreLink) {
+        document.querySelector('.js-more').addEventListener('click', function (e) {
+          e.preventDefault()
+          e.target.classList.add('dn')
+          e.target.classList.remove('dib')
+          document.querySelectorAll('.js-hidden').forEach(function (elt) {
+            elt.classList.remove('dn')
+          })
         })
-      })
+      }
     </script>
     <script>window.twttr = (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0],

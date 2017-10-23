@@ -14,7 +14,7 @@ twitter:
 author:
   twitter: "chibicode"
 # See: https://material.io/guidelines/style/color.html
-# Use color-name-value, like pink-200 or deep-purple-400
+# Use color-name-value, like pink-200 or deep-purple-100
 brand_color: "yellow-500"
 # "UA-NNNNNNNN-N"
 google_analytics: ""
@@ -24,7 +24,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: "images/og.png"
+      image: "static/images/og.png"
 # ----------------------------------------------------------------------------
 
 exclude:
