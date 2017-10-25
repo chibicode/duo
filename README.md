@@ -2,6 +2,8 @@
 
 Duo is a simple [Jekyll](http://jekyllrb.com/) blog theme.
 
+GitHub Repo: [chibicode/duo](https://github.com/chibicode/duo)
+
 <a class="github-button" href="https://github.com/chibicode/duo" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star chibicode/duo on GitHub">Star</a>
 
 ## Get Started
