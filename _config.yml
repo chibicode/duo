@@ -51,7 +51,7 @@ show_drafts: true
 port: 4000
 
 # How many posts are visible on the home page without clicking "View More"
-num_posts_visible_initially: 10
+num_posts_visible_initially: 5
 
 # Date format: See http://strftime.net/
 date_format: "%b %-d, %Y"
