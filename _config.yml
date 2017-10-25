@@ -46,10 +46,6 @@ google_analytics: ""
 # Language. For example, if you write in Japanese, use "ja"
 lang: "en"
 
-show_drafts: true
-
-port: 4000
-
 # How many posts are visible on the home page without clicking "View More"
 num_posts_visible_initially: 5
 
