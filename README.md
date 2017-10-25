@@ -2,6 +2,7 @@
 
 **Duo** is a simple [Jekyll](http://jekyllrb.com/) theme. You can use duo for a single-page site or a simple blog.
 
+- **Demo Page**: [https://chibicode.github.io/duo/](https://chibicode.github.io/duo/)
 - **Example Page:** [My React tutorial](https://chibicode.com/react-js-introduction-for-people-who-know-just-enough-jquery-to-get-by/).
 - **GitHub Repo:** [chibicode/duo](https://github.com/chibicode/duo)
 
