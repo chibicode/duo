@@ -1,6 +1,6 @@
 ![](https://chibicode.github.io/duo/static/images/og.jpg)
 
-Duo is a simple [Jekyll](http://jekyllrb.com/) blog theme.
+Duo is a simple [Jekyll](http://jekyllrb.com/) theme. You can use duo for (1) a single-page site, or (2) a simple blog.
 
 GitHub Repo: [chibicode/duo](https://github.com/chibicode/duo)
 

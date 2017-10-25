@@ -14,6 +14,7 @@ title: "Customize Duo"
 
 - Change `README.md`, which will appear on the home page and also at the bottom of each article page.
 - Then write articles under `_posts`.
+- If you don't have anything under `_posts`, then duo will be a single-page site.
 - If you want to add a Youtube video, read: [Responsive Youtube Example](/duo/posts/responsive-youtube-example/)
 
 ## Step 3: Deploy
