@@ -25,6 +25,8 @@ defaults:
       path: ""
     values:
       image: "static/images/og.png"
+show_drafts: true
+port: 4000
 # ----------------------------------------------------------------------------
 
 exclude:
