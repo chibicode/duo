@@ -1,5 +1,170 @@
 @import "tachyons";
 /* https://github.com/jneen/rouge/pull/804 */
 @import "./ayu.css";
-@import "./duo.css";
 @import "material-colors/dist/colors.css";
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Georgia, Cambria, "Times New Roman", Times, "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html[lang="ja"] {
+  line-height: 1.9;
+}
+
+/* breakpoint-not-small */
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+pre, code, samp, kbd {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+code, samp, kbd {
+  font-size: 0.85em;
+  /* light-gray */
+  background-color: #eee;
+}
+
+pre {
+  line-height: 1.3;
+  font-size: 0.9em;
+  /* spacing-small spacing-medium */
+  /* http://tachyons.io/docs/layout/spacing/ */
+  padding: .5rem .75rem;
+  overflow-x: scroll;
+  /* ayu-theme */
+  background-color: #fafafa;
+}
+
+pre code {
+  background-color: transparent;
+}
+
+hr {
+  width: 25%;
+  margin: 2em auto;
+  border-top: 0;
+  /* light-gray */
+  border-bottom: 2px solid #eee;
+  border-left: 0;
+  border-right: 0;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h1 + h2,
+h1 + h3,
+h1 + h4,
+h1 + h5,
+h1 + h6,
+h2 + h3,
+h2 + h4,
+h2 + h5,
+h2 + h6,
+h3 + h4,
+h3 + h5,
+h3 + h6,
+h4 + h5,
+h4 + h6,
+h5 + h6,
+.twitter-share-button-wrapper + h1,
+.twitter-share-button-wrapper + h2,
+.twitter-share-button-wrapper + h3,
+.twitter-share-button-wrapper + h4,
+.twitter-share-button-wrapper + h5,
+.twitter-share-button-wrapper + h6 {
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-top: 1em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 1.75em;
+}
+
+h4, h5, h6 {
+  font-size: 1rem;
+  margin-top: 2em;
+}
+
+table {
+  margin: 1em 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover, a:focus {
+  /* near-white */
+  background-color: #f4f4f4;
+}
+
+blockquote {
+  padding-left: 1em;
+  margin-left: 0;
+  /* light-gray */
+  border-left: 5px solid #eee;
+}
+
+table, th, td {
+  /* moon-gray */
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 0.5em;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+figure img, p img {
+  margin: 0 auto;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  padding-top: 0.25em;
+  /* Silver */
+  color: #999;
+}
+
+.twitter-tweet {
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.fb_iframe_widget.fb-post,
+.fb_iframe_widget.fb-post * {
+  max-width: 100% !important;
+}
